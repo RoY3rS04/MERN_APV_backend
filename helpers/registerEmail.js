@@ -15,7 +15,7 @@ export default async function registerEmail(data) {
     const { email, name, token } = data;
 
     const info = await transport.sendMail({
-        from: 'VPM - Veterinary Pacient Manager',
+        from: '"APV - Administrador Pacientes Veterinaria" <apv@correo.com>',
         to: email,
         subject: 'Comprobate your account on VPM',
         text: 'Comprobate your account on VPM',
